@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Константин Ерошкин](https://up.htmlacademy.ru/adaptive/20/user/1267999).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов].
 
 ---
 
