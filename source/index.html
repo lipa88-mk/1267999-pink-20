@@ -1,133 +1,160 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Приложение Пинк</title>
   </head>
-  <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="#">
-        pink
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+  <body>
+    <header class="header">
+      <a class="logotype" href="#">pink</a>
+      <nav class="nav">
+        <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">
-                главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                html academy
-              </a>
-            </li>
-          </ul>
+        <div class="nav__list">
+          <a class="nav__item" href="#">главная</a>
+          <a class="nav__item" href="#">фотографии</a>
+          <a class="nav__item" href="#">конкурс</a>
+          <a class="nav__item" href="#">html academy</a>
         </div>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Приложение Пинк - взгляните на жизнь иначе</h1>
-      <section class="telephone-photo">
-        <h2 class="visually-hidden">
-          Фотографии с телефона
-        </h2>
-        <p class="telephone-photo__slogan">
-          Взгляните на жизнь иначе!
-        </p>
-      </section>
+    <main class="main">
+      <h1 class="main__title">Взгляните на жизнь иначе!</h1>
       <section class="download">
-        <h2 class="visually-hidden">
-          Скачать приложение
-        </h2>
-        <button class="button download__button" type="button">
-          Скачать приложение
-        </button>
-        <ul class="download__list">
-          <li class="download__item">
-            <a class="download__link download__link--app-store" href="https://www.apple.com/ru/ios/app-store/">Мы в Апп стор</a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--google-play" href="https://play.google.com/store?hl=ru">Мы в Гугл плэй</a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--instagram" href="https://www.microsoft.com/ru-RU/store/apps">Мы в Микрософт стор</a>
-          </li>
-        </ul>
-        <p class="download__decsription">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+        <a class="download__button button" href="#">Cкачать приложение</a>
+        <div class="download__list">
+          <a class="download__link download__link--app-store" href="https://www.apple.com/ru/ios/app-store/">Мы в Апп стор</a>
+          <a class="download__link download__link--google-play" href="https://play.google.com/store?hl=ru">Мы в Гугл плэй</a>
+          <a class="download__link download__link--instagram" href="https://www.microsoft.com/ru-RU/store/apps">Мы в Микрософт стор</a>
+        </div>
+        <p class="download__decsription">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="adventages">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="adventages__text">
-          Устали от серости мегаполиса?
+        <p class="adventages__text">Устали от серости мегаполиса?</p>
+        <p class="adventages__text">Нам есть, что вам предложить!</p>
+        <div class="advantages_item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="advantages_item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="advantages_item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </section>
+      <section class="reviews">
+        <blockquote class="reviews__item">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+        <p class="reviews__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
         </p>
-        <p class="adventages__text">
-          Нам есть, что вам предложить!
+      </section>
+      <section class="services">
+        <form class="services__formes" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="services__catalog">
+            <legend class="services__text">База</legend>
+            <p class="services__text services__text--description"></p>
+            <p class="services__text services__text--price">1,99 USD</p>
+            <label class="services__item">
+              <input class="visually-hidden services__check"  type="checkbox" name="filter" checked>
+              <span class=services__check-box></span>
+              Розовый фильтр
+            </label>
+            <label class="services__item">
+              <input class="visually-hidden services__check"  type="checkbox" name="smile">
+              <span class=services__check-box></span>
+              Смайлики
+            </label>
+            <label class="services__item">
+              <input class="visually-hidden services__check"  type="checkbox" name="comment">
+              <span class=services__check-box></span>
+              Комментарии
+            </label>
+          </fieldset>
+          <fieldset class="services__catalog">
+            <legend class="services__text">СТАНДАРТ</legend>
+            <p class="services__text services__text--description">ХИТ</p>
+            <p class="services__text services__text--price">3,99 USD</p>
+            <label class="services__item">
+              <input class="visually-hidden services__check" type="checkbox" name="filter" checked>
+              <span class=services__check-box></span>
+              Розовый фильтр
+            </label>
+            <label class="services__item">
+              <input class="visually-hidden services__check" type="checkbox" name="smile" checked>
+              <span class=services__check-box></span>
+              Смайлики
+            </label>
+            <label class="services__item">
+              <input class="visually-hidden services__check" type="checkbox" name="comment">
+              <span class=services__check-box></span>
+              Комментарии
+            </label>
+          </fieldset>
+          <fieldset class="services__catalog">
+            <legend class="services__text">АНЛИМ</legend>
+            <p class="services__text services__text--description"></p>
+            <p class="services__text services__text--price">9,99 USD</p>
+            <label class="services__item">
+              <input class="visually-hidden services__check"  type="checkbox" name="filter" checked>
+              <span class=services__check-box></span>
+              Розовый фильтр
+            </label>
+            <label class="services__item">
+              <input class="visually-hidden services__check" type="checkbox" name="smile" checked>
+              <span class=services__check-box></span>
+              Смайлики
+            </label>
+            <label class="services__item">
+              <input class="visually-hidden services__check"  type="checkbox" name="comment" checked>
+              <span class=services__check-box></span>
+              Комментарии
+            </label>
+          </fieldset>
+        </form>
+        <p class="services__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
         </p>
-        <ul class="advantages_list">
-          <li class="advantages_item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__description">
-                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-              </p>
-          </li>
-          <li class="advantages_item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-              </p>
-          </li>
-          <li class="advantages_item">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__description">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-              </p>
-          </li>
-        </ul>
+      </section>
+      <section class="contacts">
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <a class="contacts__text" href="tel:+78125556666">
+          <span class="contacts__inform">Звоните:</span>+7 (812) 555-66-66
+        </a>
+        <a class="contacts__text" href="mailto:mail@htmlacademy.ru">
+          <span class="contacts__inform">Пишите:</span>+7 mail@htmlacademy.ru
+        </a>
+        <a class="contacts__text" href="#">
+          <span class="contacts__inform">Приезжайте в гости:</span>ул. Большая Конюшенная, 19/8
+        </a>
+        <img class="contacts__map" src="https://via.placeholder.com/320x200" alt="наш адрес на карте">
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__logo">
-          <a class="page-footer__logo__glases" href="#">
-            <img src="https://via.placeholder.com/74x23" alt="логотип сайта">
-          </a>
-          <p class="page-footer__logo__text">
-            pink
-          <p>
-        </div>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы в Ютюбе</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
+    <footer class="footer">
+      <div class="logo">
+        <a class="logo__glases" href="#">
+          <img src="https://via.placeholder.com/74x23" alt="логотип сайта">
+        </a>
+        <a class="logotype" href="#">pink</a>
+      </div>
+      <div class="social">
+        <a class="social__link social__link--vkontakte" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        <a class="social__link social__link--instagram" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы в Ютюбе</a>
+      </div>
+      <div class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>
