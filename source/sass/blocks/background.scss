@@ -1,32 +1,32 @@
 .background {
-    position: relative;
-    background-image: url(../../img/bg-back-mobile@1x.jpg);
+  position: relative;
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  width: 320px;
+  height: 462px;
+  &--main::after {
+    position: absolute;
+    top: 176px;
+    right: 19px;
+    content: " ";
+    background-image: url(../../img/iphone-hand-mobile@1x.png);
     width: 320px;
-    height: 462px;
-    &--main::after {
-        position: absolute;
-        top: 176px;
-        right: 19px;
-        content: " ";
-        background-image: url(../../img/iphone-hand-mobile@1x.png);
-        width: 320px;
-        height: 286px;
-        background-size: cover;
-    }
+    height: 286px;
+    background-size: cover;
+  }
 }
 
 .background__title {
-    display: flex;
-    justify-content: center;
-    width: 230px;
-    margin:  0 auto;
-    text-align: center;
-    font-weight: 300;
-    font-size: 1.71 * $font-size;
-    line-height: 2.07 * $font-size;
-    color: $additional-color;
+  display: flex;
+  justify-content: center;
+  width: 230px;
+  margin:  0 auto;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.71 * $font-size;
+  line-height: 2.07 * $font-size;
+  color: $additional-color;
 }
 
 .background__title--additional {
-    line-height: 2.36 * $font-size;
+  line-height: 2.36 * $font-size;
 }
