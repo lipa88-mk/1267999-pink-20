@@ -1,0 +1,22 @@
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $download-color;
+    text-align: center;
+}
+
+.download__button {
+    font-size: 1.28 * $font-size;
+    line-height: 1.28 * $font-size;
+    font-weight: bold;
+    color: $additional-color;
+    margin: 0 auto;
+}
+
+.download__decsription {
+    font-weight: 300;
+    color: $additional-color;
+    width: 250px;
+}
+

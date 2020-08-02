@@ -1,0 +1,37 @@
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.photo__title {
+    width: 220px;
+    color: $header-color;
+    line-height: 2.14 * font-size;
+}
+
+.photo__image {
+    text-align: center;
+}
+
+.photo__author {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 280px;
+    margin: 0 auto;
+    background-color: $additional-color;
+    color: $header-color;
+}
+
+.photo__text {
+
+    &--title {
+        font-weight: bold;
+    }
+    &--time {
+        font-weight: 300;
+        font-size: 0.85 * $font-size;
+    }
+}
