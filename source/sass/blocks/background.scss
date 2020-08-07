@@ -1,6 +1,6 @@
 .background {
   position: relative;
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url(../img/bg-back-mobile@1x.jpg);
   width: 320px;
   height: 462px;
   &--main::after {
@@ -8,7 +8,7 @@
     top: 176px;
     right: 19px;
     content: " ";
-    background-image: url(../../img/iphone-hand-mobile@1x.png);
+    background-image: url(../img/iphone-hand-mobile@1x.png);
     width: 320px;
     height: 286px;
     background-size: cover;
@@ -22,11 +22,11 @@
   margin:  0 auto;
   text-align: center;
   font-weight: 300;
-  font-size: 1.71 * $font-size;
-  line-height: 2.07 * $font-size;
+  font-size: 24px;
+  line-height: 1.2;
   color: $additional-color;
 }
 
 .background__title--additional {
-  line-height: 2.36 * $font-size;
+  line-height: 1.37;
 }

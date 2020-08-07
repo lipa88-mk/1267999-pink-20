@@ -6,20 +6,19 @@
 
 .advantages__text {
   font-weight: 300;
-  font-size: 1.71 * $font-size;
-  line-height: 2.07 * $font-size;
+  font-size: 24px;
+  line-height: 1.2;
   width: 280px;
   margin: 0 auto;
-  color: $header-color;
 }
 
 .advantages__title {
   font-weight: bold;
-  font-size: 1.28 * $font-size;
+  font-size: 18px;
+  line-height: 1.33;
 }
 
 .advantages__description {
   width: 240px;
   margin: 0 auto;
-  color: $header-color;
 }

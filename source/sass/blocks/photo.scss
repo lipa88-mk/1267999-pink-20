@@ -8,7 +8,7 @@
 .photo__title {
   width: 220px;
   color: $header-color;
-  line-height: 2.14 * font-size;
+  line-height: 2.14;
 }
 
 .photo__image {
@@ -22,16 +22,23 @@
   width: 280px;
   margin: 0 auto;
   background-color: $additional-color;
-  color: $header-color;
 }
 
 .photo__text {
-  font-size: $font-size;
+  font-size: 14px;
   &--title {
     font-weight: bold;
   }
   &--time {
     font-weight: 300;
-    font-size: 0.85 * $font-size;
+    font-size: 12px;
+    line-height: 2;
   }
+}
+
+.photo__like {
+  font-size: 12px;
+  line-height: 2;
+  color: $red-color;
+  text-transform: uppercase;
 }
