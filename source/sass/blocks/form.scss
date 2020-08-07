@@ -12,6 +12,7 @@
   line-height: 2.14;
   color: $red-color;
   text-transform: uppercase;
+  
   &--desc {
     text-align: center;
   }
@@ -22,7 +23,7 @@
   line-height: 1.67;
 }
 
-.form__fieldset  {
+.form__fieldset {
   border: none;
   display: flex;
   margin: 0;
@@ -34,11 +35,12 @@
   line-height: 1.67;
 }
 
-.form__annotation  {
+.form__annotation {
   text-align: center;
   line-height: 2.14;
   text-transform: uppercase;
+
   &--red {
-    color: $red-color
+    color: $red-color;
   }
 }
