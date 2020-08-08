@@ -1,0 +1,36 @@
+.services__catalog {
+  display: flex;
+  border: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.services__title {
+  background-color: $header-color;
+}
+
+.services__text {
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  color: $main-color;
+
+  &--price {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.services__item {
+  line-height: 2.14;
+  text-transform: uppercase;
+}
+
+.services__toggles {
+  text-align: center;
+}

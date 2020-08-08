@@ -1,0 +1,46 @@
+.form__title {
+  text-align: center;
+  line-height: 2.14;
+}
+
+.form__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__subtitle {
+  line-height: 2.14;
+  color: $red-color;
+  text-transform: uppercase;
+
+  &--desc {
+    text-align: center;
+  }
+}
+
+.form__text {
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.form__fieldset {
+  border: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.form__item {
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.form__annotation {
+  text-align: center;
+  line-height: 2.14;
+  text-transform: uppercase;
+
+  &--red {
+    color: $red-color;
+  }
+}
