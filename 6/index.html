@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Приложение Пинк</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/1267999-pink-20/6/">
+</head>
+  <body class="body">
+    <header class="header">
+      <a class="logotype" href="#">
+        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" width="74px" height="23px">
+      </a>
+      <nav class="nav">
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="nav__list">
+          <a class="nav__item" href="#">главная</a>
+          <a class="nav__item" href="photo.html">фотографии</a>
+          <a class="nav__item" href="form.html">конкурс</a>
+          <a class="nav__item" href="#">html academy</a>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="background background--main">
+        <h1 class="background__title">Взгляните на жизнь иначе!</h1>
+      </section>
+      <section class="download">
+        <a class="download__button button" href="#">Cкачать приложение</a>
+        <div class="download__list">
+          <a class="download__link download__link--app-store" href="https://www.apple.com/ru/ios/app-store/">Мы в Апп стор</a>
+          <a class="download__link download__link--google-play" href="https://play.google.com/store?hl=ru">Мы в Гугл плэй</a>
+          <a class="download__link download__link--instagram" href="https://www.microsoft.com/ru-RU/store/apps">Мы в Микрософт стор</a>
+        </div>
+        <p class="download__decsription">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="advantages">
+        <p class="advantages__text">Устали от серости мегаполиса?</p>
+        <p class="advantages__text">Нам есть, что вам предложить!</p>
+        <div class="advantages__item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="advantages__item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="advantages__item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </section>
+      <section class="reviews">
+        <blockquote class="reviews__item">
+          <cite class="reviews__author">Николай Петров</cite>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+        <div class="reviews__toggles">
+          <a class="reviews__toggle" href="#">1</a>
+          <a class="reviews__toggle" href="#">2</a>
+          <a class="reviews__toggle" href="#">3</a>
+        </div>
+      </section>
+      <section class="services">
+        <form class="services__formes" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="services__catalog">
+            <div class="services__title">
+              <legend class="services__text">База</legend>
+              <p class="services__text services__text--description"></p>
+              <p class="services__text services__text--price">1,99 USD</p>
+            </div>
+            <label class="services__item">
+              <input class="visually-hidden services__check"  type="checkbox" name="filter" checked>
+              <span class=services__check-box></span>
+              Розовый фильтр
+            </label>
+            <label class="services__item">
+              <input class="visually-hidden services__check"  type="checkbox" name="smile">
+              <span class=services__check-box></span>
+              Смайлики
+            </label>
+            <label class="services__item">
+              <input class="visually-hidden services__check"  type="checkbox" name="comment">
+              <span class=services__check-box></span>
+              Комментарии
+            </label>
+          </fieldset>
+          <fieldset class="services__catalog">
+            <div class="services__title">
+            <legend class="services__text">СТАНДАРТ</legend>
+            <p class="services__text services__text--description">ХИТ</p>
+            <p class="services__text services__text--price">3,99 USD</p>
+          </div>
+            <label class="services__item">
+              <input class="visually-hidden services__check" type="checkbox" name="filter" checked>
+              <span class=services__check-box></span>
+              Розовый фильтр
+            </label>
+            <label class="services__item">
+              <input class="visually-hidden services__check" type="checkbox" name="smile" checked>
+              <span class=services__check-box></span>
+              Смайлики
+            </label>
+            <label class="services__item">
+              <input class="visually-hidden services__check" type="checkbox" name="comment">
+              <span class="services__check-box"></span>
+              Комментарии
+            </label>
+          </fieldset>
+          <fieldset class="services__catalog">
+            <div class="services__title">
+              <legend class="services__text">АНЛИМ</legend>
+              <p class="services__text services__text--description"></p>
+              <p class="services__text services__text--price">9,99 USD</p>
+            </div>
+            <label class="services__item">
+              <input class="visually-hidden services__check"  type="checkbox" name="filter" checked>
+              <span class="services__check-box"></span>
+              Розовый фильтр
+            </label>
+            <label class="services__item">
+              <input class="visually-hidden services__check" type="checkbox" name="smile" checked>
+              <span class=services__check-box></span>
+              Смайлики
+            </label>
+            <label class="services__item">
+              <input class="visually-hidden services__check"  type="checkbox" name="comment" checked>
+              <span class="services__check-box"></span>
+              Комментарии
+            </label>
+          </fieldset>
+        </form>
+        <div class="services__toggles slider">
+          <a class="slider__toggle" href="#">1</a>
+          <a class="slider__toggle" href="#">2</a>
+          <a class="slider__toggle" href="#">3</a>
+        </div>
+      </section>
+      <section class="contacts">
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <a class="contacts__link" href="tel:+78125556666">
+          <p class="contacts__text">Звоните:</p>
+          <p class="contacts__text contacts__text--inform">+7 (812) 555-66-66</p>
+        </a>
+        <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
+          <p class="contacts__text">Пишите:</p>
+          <p class="contacts__text contacts__text--inform">mail@htmlacademy.ru</p>
+        </a>
+        <a class="contacts__link" href="#">
+          <p class="contacts__text">Приезжайте в гости:</p>
+          <p class="contacts__text contacts__text--inform">ул. Большая Конюшенная, 19/8</p>
+        </a>
+        <img class="contacts__map" src="https://via.placeholder.com/320x200" alt="наш адрес на карте">
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a class="footer__logotype" href="#">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк" width="145px" height="40px">
+        </a>
+        </div>
+      <div class="social">
+        <a class="social__link social__link--vkontakte" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        <a class="social__link social__link--instagram" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы в Ютюбе</a>
+      </div>
+      <div class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
