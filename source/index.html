@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Приложение Пинк</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -16,40 +17,44 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="nav__list">
-          <a class="nav__item" href="#">главная</a>
-          <a class="nav__item" href="photo.html">фотографии</a>
-          <a class="nav__item" href="form.html">конкурс</a>
-          <a class="nav__item" href="#">html academy</a>
+          <a class="nav__item" href="#">Главная</a>
+          <a class="nav__item" href="photo.html">Фотографии</a>
+          <a class="nav__item" href="form.html">Конкурс</a>
+          <a class="nav__item" href="#">HTML Academy</a>
         </div>
       </nav>
     </header>
     <main class="main">
-      <section class="background background--main">
-        <h1 class="background__title">Взгляните на жизнь иначе!</h1>
-      </section>
-      <section class="download">
-        <a class="download__button button" href="#">Cкачать приложение</a>
-        <div class="download__list">
-          <a class="download__link download__link--app-store" href="https://www.apple.com/ru/ios/app-store/">Мы в Апп стор</a>
-          <a class="download__link download__link--google-play" href="https://play.google.com/store?hl=ru">Мы в Гугл плэй</a>
-          <a class="download__link download__link--instagram" href="https://www.microsoft.com/ru-RU/store/apps">Мы в Микрософт стор</a>
+      <section class="background background--wrapper">
+        <div class="background__main">
+          <h1 class="background__title">Взгляните на жизнь иначе!</h1>
         </div>
-        <p class="download__decsription">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="background__download">
+          <a class="background__button button" href="#">Cкачать приложение</a>
+          <div class="background__list">
+            <a class="background__link background__link--app-store" href="https://www.apple.com/ru/ios/app-store/">Мы в Апп стор</a>
+            <a class="background__link background__link--google-play" href="https://play.google.com/store?hl=ru">Мы в Гугл плэй</a>
+            <a class="background__link background__link--instagram" href="https://www.microsoft.com/ru-RU/store/apps">Мы в Микрософт стор</a>
+          </div>
+          <p class="background__decsription">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
       <section class="advantages">
         <p class="advantages__text">Устали от серости мегаполиса?</p>
-        <p class="advantages__text">Нам есть, что вам предложить!</p>
-        <div class="advantages__item">
-          <h3 class="advantages__title">Поднимает настроение</h3>
-          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </div>
-        <div class="advantages__item">
-          <h3 class="advantages__title">Меняет мир вокруг</h3>
-          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
-        <div class="advantages__item">
-          <h3 class="advantages__title">Заводит новых друзей</h3>
-          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <p class="advantages__text advantages__text--desc">Нам есть, что вам предложить!</p>
+        <div class="advantages__wrapper">
+          <div class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
         </div>
       </section>
       <section class="reviews">
