@@ -17,7 +17,7 @@
   }
 
   &--bottom {
-    
+
     @media (min-width: $tablet-width) {
       flex-direction: row;
       justify-content: space-between;
@@ -111,7 +111,7 @@
   border-radius: 1px;
 
   &--desc {
-    
+
     @media (min-width: $tablet-width) {
     width: 496px;
     margin: 0 auto;
@@ -158,7 +158,7 @@
 
     @media (max-width: $mobile-width) {
       display: none;
-    } 
+    }
 
     @media (min-width: $desktop-width) {
       display: flex;
