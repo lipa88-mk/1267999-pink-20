@@ -24,7 +24,6 @@
   color: $black-color;
 
   &--button {
-
     @media (max-width: $tablet-width) {
       display: none;
     }
@@ -57,7 +56,6 @@
 }
 
 .reviews__desc {
-
   @media (max-width: $tablet-width) {
     display: none;
   }

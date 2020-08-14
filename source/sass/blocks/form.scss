@@ -3,7 +3,6 @@
 }
 
 .form__wrapper {
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-flow: wrap column;
@@ -17,7 +16,6 @@
   }
 
   &--bottom {
-
     @media (min-width: $tablet-width) {
       flex-direction: row;
       justify-content: space-between;
@@ -65,7 +63,6 @@
   }
 
   &--no {
-
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -79,7 +76,7 @@
   padding-left: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   &--desc {
@@ -89,14 +86,13 @@
   }
 
   &--contacts {
-
     @media (min-width: $tablet-width) {
       margin-left: 90px;
     }
 
     @media (min-width: $desktop-width) {
       width: 130px;
-      margin: 0px;
+      margin: 0;
     }
   }
 }
@@ -111,15 +107,14 @@
   border-radius: 1px;
 
   &--desc {
-
     @media (min-width: $tablet-width) {
-    width: 496px;
-    margin: 0 auto;
+      width: 496px;
+      margin: 0 auto;
     }
 
     @media (min-width: $desktop-width) {
       width: 371px;
-      margin: 0px;
+      margin: 0;
     }
   }
 }
@@ -141,21 +136,18 @@
   }
 
   &--order-check {
-
     @media (min-width: $tablet-width) {
       order: 1;
     }
   }
 
   &--order-text {
-
     @media (min-width: $tablet-width) {
       order: 2;
     }
   }
 
   &--display {
-
     @media (max-width: $mobile-width) {
       display: none;
     }
@@ -167,7 +159,6 @@
   }
 
   &--aplication {
-
     @media (min-width: $desktop-width) {
       width: 460px;
     }
@@ -182,7 +173,6 @@
   padding: 0;
 
   &--text {
-
     @media (min-width: $tablet-width) {
       width: 496px;
       margin: 10px auto;

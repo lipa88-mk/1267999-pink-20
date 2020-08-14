@@ -1,5 +1,4 @@
 .effect {
-
   @media (max-width: $tablet-width) {
     display: none;
   }
@@ -20,7 +19,6 @@
 }
 
 .effect__title {
-
   @media (min-width: $tablet-width) {
     width: 320px;
     font-weight: bold;
@@ -36,7 +34,6 @@
 }
 
 .effect__desc {
-
   @media (min-width: $tablet-width) {
     width: 320px;
     line-height: 1.71;
