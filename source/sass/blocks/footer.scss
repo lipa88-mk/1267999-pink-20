@@ -8,5 +8,11 @@
     justify-content: space-between;
     align-items: center;
     min-height: 197px;
+    margin: 0 auto;
+    width: $tablet-wrapper;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-wrapper
   }
 }

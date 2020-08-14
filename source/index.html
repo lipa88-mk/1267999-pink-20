@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -7,36 +7,40 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="body">
+  <body class="page__body">
     <header class="header">
-      <a class="logotype" href="#">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" width="74px" height="23px">
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="nav__list">
-          <a class="nav__item" href="#">Главная</a>
-          <a class="nav__item" href="photo.html">Фотографии</a>
-          <a class="nav__item" href="form.html">Конкурс</a>
-          <a class="nav__item" href="#">HTML Academy</a>
-        </div>
-      </nav>
+      <div class="header__wrapper">
+        <a class="logotype" href="#">
+          <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" width="74px" height="23px">
+        </a>
+        <nav class="nav">
+          <button class="nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="nav__list">
+            <a class="nav__item" href="#">Главная</a>
+            <a class="nav__item" href="photo.html">Фотографии</a>
+            <a class="nav__item" href="form.html">Конкурс</a>
+            <a class="nav__item" href="#">HTML Academy</a>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <section class="background background--wrapper">
-        <div class="background__main">
-          <h1 class="background__title">Взгляните на жизнь иначе!</h1>
-        </div>
-        <div class="background__download">
-          <a class="background__button button" href="#">Cкачать приложение</a>
-          <div class="background__list">
-            <a class="background__link background__link--app-store" href="https://www.apple.com/ru/ios/app-store/">Мы в Апп стор</a>
-            <a class="background__link background__link--google-play" href="https://play.google.com/store?hl=ru">Мы в Гугл плэй</a>
-            <a class="background__link background__link--instagram" href="https://www.microsoft.com/ru-RU/store/apps">Мы в Микрософт стор</a>
+        <div class="background__inner">
+          <div class="background__main">
+            <h1 class="background__title">Взгляните на жизнь иначе!</h1>
           </div>
-          <p class="background__decsription">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="background__download">
+            <a class="background__button button" href="#">Cкачать приложение</a>
+            <div class="background__list">
+              <a class="background__link background__link--app-store" href="https://www.apple.com/ru/ios/app-store/">Мы в Апп стор</a>
+              <a class="background__link background__link--google-play" href="https://play.google.com/store?hl=ru">Мы в Гугл плэй</a>
+              <a class="background__link background__link--instagram" href="https://www.microsoft.com/ru-RU/store/apps">Мы в Микрософт стор</a>
+            </div>
+            <p class="background__decsription">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -57,10 +61,17 @@
           </div>
         </div>
       </section>
+      <section class="effect">
+        <h2 class="effect__title">Эффект на 24 часа!</h2>
+        <p class="effect__desc">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a href="#" class="effect__desc effect__desc--more">Узнать больше об исследовании</a>
+      </section>
       <section class="reviews">
         <blockquote class="reviews__item">
-          <cite class="reviews__author">Николай Петров</cite>
+          <cite class="reviews__author reviews__author--top">Николай Петров</cite>
           <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <cite class="reviews__author reviews__author--button">Николай Петров</cite>
+          <p class="reviews__desc">25 лет, водитель трамвая</p>
         </blockquote>
         <div class="reviews__toggles">
           <a class="reviews__toggle" href="#">1</a>
@@ -145,18 +156,20 @@
       </section>
       <section class="contacts">
         <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-        <a class="contacts__link" href="tel:+78125556666">
-          <p class="contacts__text">Звоните:</p>
-          <p class="contacts__text contacts__text--inform">+7 (812) 555-66-66</p>
-        </a>
-        <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
-          <p class="contacts__text">Пишите:</p>
-          <p class="contacts__text contacts__text--inform">mail@htmlacademy.ru</p>
-        </a>
-        <a class="contacts__link" href="#">
-          <p class="contacts__text">Приезжайте в гости:</p>
-          <p class="contacts__text contacts__text--inform">ул. Большая Конюшенная, 19/8</p>
-        </a>
+        <div class="contacts__wrapper">
+          <a class="contacts__link" href="tel:+78125556666">
+            <p class="contacts__text">Звоните:</p>
+            <p class="contacts__text contacts__text--inform">+7 (812) 555-66-66</p>
+          </a>
+          <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
+            <p class="contacts__text">Пишите:</p>
+            <p class="contacts__text contacts__text--inform">mail@htmlacademy.ru</p>
+          </a>
+          <a class="contacts__link" href="#">
+            <p class="contacts__text">Приезжайте в гости:</p>
+            <p class="contacts__text contacts__text--inform">ул. Большая Конюшенная, 19/8</p>
+          </a>
+        </div>
         <img class="contacts__map" src="https://via.placeholder.com/320x200" alt="наш адрес на карте">
       </section>
     </main>
