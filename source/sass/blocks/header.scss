@@ -1,11 +1,16 @@
 .header {
   background-color: $header-color;
+}
+
+.header__wrapper {
   display: flex;
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
+    width: 940px;
     padding-top: 30px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 }

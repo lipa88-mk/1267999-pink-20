@@ -1,69 +1,77 @@
 .background {
-
   &--additional {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  width: 320px;
-  height: 170px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 462px;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/bg-back-tablet@1x.jpg");
-      width: 660px;
+      background-size: cover;
+      width: 100%;
       height: 440px;
     }
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/bg-back-desktop@1x.jpg");
-      width: 1200px;
+      background-size: cover;
+      width: 100%;
       height: 440px;
     }
   }
 
   &--wrapper {
     @media (min-width: $tablet-width) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: start;
       background-image: url("../img/bg-back-tablet@1x.jpg");
-      width: 660px;
-      min-height: 729px;
+      background-size: cover;
+      width: 100%;
+      height: 729px;
     }
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/bg-back-desktop@1x.jpg");
-      width: 1200px;
+      background-size: cover;
+      width: 100%;
       height: 853px;
     }
+  }
+}
+
+.background__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 620px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
 }
 
 .background__main {
   position: relative;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     position: relative;
     background-image: url("../img/bg-back-mobile@1x.jpg");
-    width: 320px;
     height: 462px;
+    background-size: cover;
 
     &::after {
       position: absolute;
       top: 175px;
-      right: 0px;
+      right: 1px;
       content: " ";
       background-image: url("../img/iphone-hand-mobile@1x.png");
       width: 320px;
       height: 286px;
       background-size: cover;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-left: 90px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 180px;
   }
 }
 
@@ -78,6 +86,7 @@
   color: $additional-color;
 
   @media (min-width: $tablet-width) {
+    margin-left: 65px;
     font-size: 40px;
     line-height: 1.2;
   }
@@ -88,6 +97,7 @@
   }
 
   &--additional {
+    margin: 0 auto;
     line-height: 1.37;
 
     @media (min-width: $tablet-width) {
@@ -100,17 +110,15 @@
   }
 
   &--form {
-
     @media (min-width: $tablet-width) {
+      margin: 0 auto;
       width: 380px;
     }
 
     @media (min-width: $desktop-width) {
       width: 800px;
     }
-
   }
-
 }
 
 .background__download {
@@ -122,14 +130,9 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
     position: relative;
     background-color: transparent;
     z-index: 2;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 115px;
   }
 }
 

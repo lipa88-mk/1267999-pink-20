@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="body">
+  <body class="page__body">
     <header class="header">
-      <a class="logotype" href="#">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" width="74px" height="23px">
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="nav__list">
-          <a class="nav__item" href="index.html">главная</a>
-          <a class="nav__item" href="#">фотографии</a>
-          <a class="nav__item" href="form.html">конкурс</a>
-          <a class="nav__item" href="#">html academy</a>
-        </div>
-      </nav>
+      <div class="header__wrapper">
+        <a class="logotype" href="#">
+          <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" width="74px" height="23px">
+        </a>
+        <nav class="nav">
+          <button class="nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="nav__list">
+            <a class="nav__item" href="index.html">Главная</a>
+            <a class="nav__item" href="#">Фотографии</a>
+            <a class="nav__item" href="form.html">Конкурс</a>
+            <a class="nav__item" href="#">HTML Academy</a>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <section class="background background--additional">
@@ -105,15 +107,23 @@
         <h3 class="post__text">Затмите их всех!</h3>
         <p class="post__text">Выкладывайте все, что накопилось в телефоне!</p>
         <div class="post__wrapper">
-          <img class="post__image" src="img/photo-road-mobile@1x.jpg" alt="пост с телефона" width="280" height="374">
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
+          <div class="post__inner">
+            <div class="post__picture">
+              <img class="post__image" src="img/photo-road-mobile@1x.jpg" alt="пост с телефона" width="280" height="374">
             </div>
-            <div class="toggle"></div>
+            <div class="post__changes">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle"></div>
+              </div>
+              <div class="post__wrap">
+                <a class="post__button button" href="#">Запостить</a>
+                <a class="post__cancel button" href="#">Отмена</a>
+              </div>
+            </div>
           </div>
-          <a class="post__button button" href="#">Запостить</a>
-          <a class="post__cancel button" href="#">Отмена</a>
         </div>
       </section>
     </main>
