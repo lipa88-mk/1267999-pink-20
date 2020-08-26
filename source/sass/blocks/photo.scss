@@ -1,8 +1,6 @@
 .photo {
-  display: flex;
-  flex-direction: column;
+  @include flexible (flex, column, center);
   align-items: center;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -35,9 +33,8 @@
   line-height: 2.14;
 
   @media (min-width: $tablet-width) {
+    @include font-no-weight (18px, 1.67);
     width: 450px;
-    font-size: 18px;
-    line-height: 1.67;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,9 +47,7 @@
 }
 
 .photo__author {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+  @include flexible (flex, column, left);
   width: 280px;
   margin: 0 auto;
   background-color: $additional-color;
@@ -86,15 +81,12 @@
   }
 
   &--time {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 2;
+    @include font (300, 12px, 2);
   }
 }
 
 .photo__like {
-  font-size: 12px;
-  line-height: 2;
+  @include font-no-weight (12px, 2);
   color: $red-color;
   text-transform: uppercase;
 }

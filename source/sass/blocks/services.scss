@@ -38,9 +38,7 @@
 }
 
 .services__subtitle {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font (bold, 16px, 1.87);
   text-transform: uppercase;
   color: $main-color;
   text-align: center;
@@ -54,9 +52,7 @@
   color: $header-color;
 
   &--price {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.67;
+    @include font (300, 18px, 1.67);
   }
 }
 

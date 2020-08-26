@@ -1,7 +1,5 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  @include flexible (flex, column, center);
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

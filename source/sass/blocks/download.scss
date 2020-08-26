@@ -1,15 +1,11 @@
 .download {
-  display: flex;
-  flex-direction: column;
+  @include flexible (flex, column, center);
   align-items: center;
   background-color: $download-color;
-  text-align: center;
 }
 
 .download__button {
-  font-size: 18px;
-  line-height: 1;
-  font-weight: bold;
+  @include font (bold, 18px, 1);
   color: $additional-color;
   margin: 0 auto;
 }

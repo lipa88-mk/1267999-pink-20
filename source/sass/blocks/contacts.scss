@@ -5,14 +5,11 @@
 .contacts__title {
   width: 225px;
   margin: 0 auto;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 1.2;
+  @include font (300, 24px, 1.2);
 
   @media (min-width: $tablet-width) {
     width: 370px;
-    font-size: 40px;
-    line-height: 1.35;
+    @include font-no-weight (40px, 1.35);
   }
 
   @media (min-width: $desktop-width) {
@@ -52,9 +49,7 @@
 
 .contacts__text {
   margin: 0;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.38;
+  @include font (bold, 18px, 1.38);
   color: $header-color;
 
   &--inform {

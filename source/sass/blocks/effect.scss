@@ -1,14 +1,12 @@
 .effect {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
+    @include flexible (flex, column, left);
     width: $tablet-wrapper;
     align-items: flex-end;
-    text-align: left;
     margin: 0 auto;
   }
 
@@ -20,16 +18,13 @@
 
 .effect__title {
   @media (min-width: $tablet-width) {
+    @include font (bold, 30px, 1.2);
     width: 320px;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 1.2;
   }
 
   @media (min-width: $desktop-width) {
     width: 535px;
-    font-size: 30px;
-    line-height: 1;
+    @include font-no-weight (30px, 1);
   }
 }
 
@@ -41,8 +36,7 @@
 
   @media (min-width: $desktop-width) {
     width: 535px;
-    font-size: 18;
-    line-height: 1.67;
+    @include font-no-weight (18px, 1.67);
   }
 
   &--more {

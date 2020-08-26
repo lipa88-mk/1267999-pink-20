@@ -8,7 +8,6 @@
   line-height: 1.28;
 
   @media (min-width: $desktop-width) {
-    font-size: 18px;
-    line-height: 1;
+    @include font-no-weight (18px, 1);
   }
 }

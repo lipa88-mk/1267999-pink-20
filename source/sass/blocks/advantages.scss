@@ -1,20 +1,15 @@
 .advantages {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  @include flexible (flex, column, center);
 }
 
 .advantages__text {
+  @include font (300, 24px, 1.2);
   min-width: 280px;
   margin: 0 auto;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 1.2;
 
   @media (min-width: $tablet-width) {
     width: 590px;
-    font-size: 40px;
-    line-height: 1.35;
+    @include font-no-weight (40px, 1.35);
   }
 
   @media (min-width: $desktop-width) {
@@ -34,13 +29,10 @@
 }
 
 .advantages__wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-
   @media (min-width: $tablet-width) {
+    @include flexible (flex, column, left);
+    margin: 0 auto;
     align-items: flex-end;
-    text-align: left;
     width: $tablet-wrapper;
   }
 
@@ -64,13 +56,10 @@
 }
 
 .advantages__title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.33;
+  @include font(bold, 18px, 1.33);
 
   @media (min-width: $desktop-width) {
-    font-size: 30px;
-    line-height: 1;
+    @include font-no-weight (30px, 1);
   }
 }
 
@@ -85,7 +74,6 @@
 
   @media (min-width: $desktop-width) {
     width: 255px;
-    font-size: 18px;
-    line-height: 1.67;
+    @include font-no-weight (18px, 1.67);
   }
 }

@@ -36,15 +36,12 @@
 
 .post__text {
   text-align: center;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 2.14;
+  @include font (normal, 14px, 2.14);
   text-transform: none;
 
   @media (min-width: $tablet-width) {
     width: 422px;
-    font-size: 18px;
-    line-height: 1.67;
+    @include font-no-weight (18px, 1.67);
     margin: 0 auto;
   }
 }
