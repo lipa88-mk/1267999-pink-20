@@ -1,26 +1,81 @@
 .effect {
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    @include flexible (flex, column, left);
-    width: $tablet-wrapper;
-    align-items: flex-end;
-    margin: 0 auto;
-  }
-
   @media (min-width: $desktop-width) {
-    width: $desktop-wrapper;
-    margin: 0 auto;
+  background-color: $additional-color;
+  padding-bottom: 110px;
+  }
+
+  &--inner {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      @include flexible (flex, column, left);
+      width: $tablet-wrapper;
+      align-items: flex-end;
+      margin: 0 auto;
+      z-index: 2;
+      padding: 69px 10px 0px 0px;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-wrapper;
+      margin: 0 auto;
+      padding: 94px 0px 0px 0px;
+    }
   }
 }
 
-.effect__title {
-  @media (min-width: $tablet-width) {
-    @include font (bold, 30px, 1.2);
-    width: 320px;
+.effect__timer {
+  position: absolute;
+  top: 53px;
+  left: 0vw;
+
+  &::after {
+    position: absolute;
+    content: "24";
+    padding: 5px 32px;
+    @include font (bold, 96px, 1.7);
+    color: $red-color;
+    border: 16px solid $red-color;
+    border-radius: 50%;
+    top: 53px;
+    left: 7%;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 25px;
+    left: 0vw;
+
+    &::after {
+      @include font (bold, 120px, 1.36);
+      padding: 25px 40px;
+      top: 72px;
+      left: 2vw;
+    }
+  }
+}
+
+.effect__svg {
+  width: 238px;
+  height: 276px;
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    height: 345px;
+  }
+}
+
+.effect__item {
+  @media (min-width: $desktop-width) {
+  margin-right: 35px;
+  }
+} 
+
+.effect__title {
+  @include font (bold, 30px, 1.2);
+  width: 300px;
 
   @media (min-width: $desktop-width) {
     width: 535px;
@@ -29,18 +84,32 @@
 }
 
 .effect__desc {
-  @media (min-width: $tablet-width) {
-    width: 320px;
-    line-height: 1.71;
-  }
+  margin-top: -14px;
+  width: 300px;
+  line-height: 1.71;
 
   @media (min-width: $desktop-width) {
+    margin-top: 10px;
+    margin-bottom: 30px;
     width: 535px;
     @include font-no-weight (18px, 1.67);
   }
 
   &--more {
+    margin-top: 0px;
     color: $red-color;
     text-decoration-line: underline;
+  }
+}
+
+.effect__br {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.effect__br-desktop {
+  @media (max-width: $tablet-width-only) {
+    display: none;
   }
 }

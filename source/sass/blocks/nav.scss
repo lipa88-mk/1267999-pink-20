@@ -3,7 +3,7 @@
   @include flexible (flex, column, center);
 
   @media (min-width: $desktop-width) {
-    width: 616px;
+    width: 620px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -20,6 +20,11 @@
   background-color: $header-color;
   cursor: pointer;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+    right: 2px;
+  }
 }
 
 .nav--closed .nav__toggle::before {
@@ -68,10 +73,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 17px;
-    width: 32px;
-    height: 2px;
+    @include icon-size (32px, 2px, 23px, 24px);
     background-color: $main-color;
   }
 
@@ -98,7 +100,7 @@
 .nav__item {
   width: auto;
   padding-top: 16px;
-  min-height: 48px;
+  min-height: 64px;
   box-shadow: 0 1px 0 $black-color, inset 0 1px 0 rgba($red-color, 0.15);
   color: $main-color;
   text-transform: uppercase;
@@ -136,7 +138,7 @@
       content: "";
       position: absolute;
       right: 0;
-      bottom: 0px;
+      bottom: 18px;
       left: 0;
       height: 2px;
       background: $main-color;
