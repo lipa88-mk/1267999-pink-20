@@ -1,55 +1,121 @@
 .advantages {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.advantages__text {
-  min-width: 280px;
-  margin: 0 auto;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+  @include flexible (flex, column, center);
+  padding-top: 0px;
 
   @media (min-width: $tablet-width) {
-    width: 590px;
-    font-size: 40px;
-    line-height: 1.35;
+    padding-top: 10px;
+    margin-top: -113px;
+    background-color: $main-color;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 0px;
+  }
+}  
+
+.advantages--wrapper {
+  position: relative;
+  background-color: $additional-color;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      content: " ";
+      @include background-pseudo (url("../img/iphone-screen-1-desktop@1x.png"), cover, 292px, 302px);
+      top: -36px;
+      left: 11vw;
+    }
+        
+    &::after {
+      position: absolute;
+      content: " ";
+      @include background-pseudo (url("../img/iphone-screen-2-desktop@1x.png"), cover, 292px, 302px);
+      top: -36px;
+      right: 37vw;
+    }
+  }
+}
+
+.advantages__list {
+  z-index: inherit;
+  position: relative;
+  padding-bottom: 338px;
+  margin-bottom: -47px;
+
+  @media (max-width: $mobile-width) {
+    &::after {
+      position: absolute;
+      content: " ";
+      @include background-pseudo (url("../img/iphone-screen-mobile@1x.png"), cover, 157px, 320px);
+      top: 446px;
+      left: 26%;
+      }
+    }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    @include flexible (flex, column, left);
+    margin: 0 auto;
+    align-items: flex-end;
+    width: $tablet-wrapper;
+    padding-bottom: 16px;
+    
+    &::after {
+      position: absolute;
+      content: " ";
+      @include background-pseudo (url("../img/iphone-screen-3-tablet@1x.png"), cover, 268px, 481px);
+      top: -59px;
+      left: 0vw;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flexible (flex, row, center);
+    margin: 310px auto 0 auto;
+    padding-bottom: 16px;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 940px;
+
+    &::after {
+      position: absolute;
+      content: " ";
+      @include background-pseudo (url("../img/iphone-screen-3-desktop@1x.png"), cover, 292px, 302px);
+      top: -348px;
+      right: 0vw;
+    }
+  }
+}
+
+.advantages__text {
+  @include font (300, 24px, 1.2);
+  min-width: 280px;
+  margin: 39px auto -11px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 590px;
+    @include font-no-weight (40px, 1.35);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 52px auto -11px auto;
     width: 780px;
     font-size: 50px;
   }
 
   &--desc {
+    margin: 44px auto 95px auto;
+
     @media (min-width: $tablet-width) {
       width: 350px;
+      margin-top: 11px;
     }
 
     @media (min-width: $desktop-width) {
+      margin-top: 13px;
       width: 450px;
     }
-  }
-}
-
-.advantages__wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    align-items: flex-end;
-    text-align: left;
-    width: $tablet-wrapper;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
-    text-align: center;
-    width: $desktop-wrapper;
   }
 }
 
@@ -64,28 +130,48 @@
 }
 
 .advantages__title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.33;
+  margin-top: 21px;
+  @include font(bold, 18px, 1.33);
 
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+    
   @media (min-width: $desktop-width) {
-    font-size: 30px;
-    line-height: 1;
+    margin-left: 0px;
+    @include font-no-weight (30px, 1);
   }
 }
 
 .advantages__desc {
   width: 280px;
-  margin: 0 auto;
+  margin: -6px auto 33px auto;
 
   @media (min-width: $tablet-width) {
     width: 320px;
-    margin: 0;
+    margin: -5px auto 28px 11px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 255px;
-    font-size: 18px;
-    line-height: 1.67;
+    margin: -8px auto 28px 8px;
+    width: 240px;
+    @include font-no-weight (18px, 1.67);
+  }
+}
+
+.advantages__br-tablet {
+  @media (max-width: $mobile-width)  {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__br-desktop {
+  @media (max-width: $tablet-width-only) {
+    display: none;
   }
 }

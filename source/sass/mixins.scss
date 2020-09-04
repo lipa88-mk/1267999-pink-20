@@ -1,1 +1,49 @@
-// Начните писать стили здесь
+@mixin flexible ($display, $flex-direction, $text-align) {
+  display: $display;
+  flex-direction: $flex-direction;
+  text-align: $text-align;
+}
+
+@mixin font ($font-weight, $font-size, $line-height) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin font-no-weight ($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin background ($background-image, $background-size, $width, $height, $bg-color: $header-color) {
+  background-image: $background-image;
+  background-size: $background-size;
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
+}
+
+@mixin background-pseudo ($background-image, $background-size, $width, $height) {
+  background-image: $background-image;
+  background-size: $background-size;
+  width: $width;
+  height: $height;
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+@mixin icon-size ($width, $height, $top, $left) {
+  width: $width;
+  height: $height;
+  top: $top;
+  left: $left;
+}

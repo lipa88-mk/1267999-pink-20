@@ -1,45 +1,71 @@
 .reviews {
-  text-align: center;
-  width: 280px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  background-color: $main-color;
 
   @media (min-width: $tablet-width) {
-    width: 620px;
+    z-index: 1;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 690px;
+  &--wrapper {
+    text-align: center;
+    margin: 0 auto;
+    width: $mobile-wrapper;
+
+    @media (min-width: $tablet-width) {
+      width: $tablet-wrapper;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 690px;
+    }
   }
 }
 
 .reviews__item {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 122px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 187px;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      @include background-pseudo (url("../img/icon-quotes.svg"), cover, 79px, 64px);
+      top: -113px;
+      right: 46vw;
+    }
+  }
 }
 
 .reviews__author {
-  font-size: 18px;
-  line-height: 1.67;
+  display: block;
+  @include font (bold, 18px, 1.67);
   font-style: normal;
-  font-weight: bold;
   color: $black-color;
 
   &--button {
-    @media (max-width: $tablet-width) {
+    @media (max-width: $mobile-width) {
       display: none;
     }
 
     @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 1.5;
+      margin-top: 35px;
+      @include font-no-weight (20px, 1.5);
     }
 
     @media (min-width: $desktop-width) {
-      font-size: 24px;
-      line-height: 1.25;
+      @include font-no-weight (24px, 1.25);
     }
   }
 
   &--top {
+    padding-top: 39px;
+
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -47,16 +73,38 @@
 }
 
 .reviews__text {
-  line-height: 2.14;
+  margin-top: 14px;
+  margin-bottom: 25px;
+  line-height: 2.15;
 
   @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 1.67;
+    @include font-no-weight (18px, 1.67);
   }
 }
 
 .reviews__desc {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-no-weight (18px, 1.67);
+  }
+}
+
+.reviews__pagination {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
