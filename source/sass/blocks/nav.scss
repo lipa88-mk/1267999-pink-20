@@ -9,6 +9,12 @@
   }
 }
 
+.nav--closed {
+  @media (min-width: $desktop-width) {
+    margin-top: 28px;
+  }
+}
+
 .nav__toggle {
   position: absolute;
   top: 9px;
@@ -25,6 +31,10 @@
     top: 30px;
     right: 2px;
   }
+}
+
+.nav--closed .nav__toggle {
+  background-color: transparent;
 }
 
 .nav--closed .nav__toggle::before {
@@ -52,7 +62,7 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
-} 
+}
 
 .nav--closed .nav__list {
   @media (max-width: $tablet-width-only) {
@@ -62,6 +72,15 @@
 
 .nav--nojs .nav__toggle {
   display: none;
+}
+
+.nav--opened {
+  background-color: $header-color;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    margin-top: 28px;
+  }
 }
 
 .nav--opened .nav__toggle {
@@ -143,6 +162,5 @@
       height: 2px;
       background: $main-color;
     }
-
   }
 }

@@ -6,21 +6,28 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 197px;
+    min-height: 127px;
     margin: 0 auto;
     width: $tablet-wrapper;
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 197px;
     width: $desktop-wrapper;
   }
 }
 
 .footer__logo {
-  margin-top: 32px;
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-left: -4px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-top: 25px;
+    margin-top: 0;
+    margin-left: -12px;
   }
 }
 
@@ -29,15 +36,15 @@
   flex-wrap: wrap;
   justify-content: space-around;
   width: 188px;
-  margin: 0 auto;
+  margin: 7px auto 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin-top: 5px;
-    margin-left: 70px;
+    margin-top: -27px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0px -6px 0px 0px;
+    margin-top: -38px;
+    padding-left: 7px;
   }
 }
 
@@ -48,6 +55,14 @@
   margin-top: 33px;
   border: 3px solid rgba($header-color, 0.1);
   border-radius: 50%;
+
+  &:hover:not(:active) {
+    border-color: $header-color;
+  }
+}
+
+.footer__social-link:active .footer__social-icon {
+  opacity: 0.3;
 }
 
 .footer__social-icon {
@@ -59,9 +74,9 @@
   }
 
   &--facebook {
-    @include icon-size (9px, 18px, 13px, 19px);  
+    @include icon-size (9px, 18px, 13px, 19px);
   }
-  
+
   &--youtube {
     @include icon-size (15px, 13px, 16px, 17px);
   }
@@ -70,7 +85,16 @@
 .footer__copyright {
   display: flex;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+    margin-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .footer__copyright-text {
@@ -82,9 +106,21 @@
 
 .footer__copyright-link {
   margin-left: 14px;
-  margin-top: 5px;
+  margin-top: 7px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 10px;
+    margin-top: 7px;
+  }
+}
+
+.footer__academy {
+  fill: $red-color;
+
+  &:hover {
+    fill: $header-color;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

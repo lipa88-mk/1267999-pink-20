@@ -1,9 +1,11 @@
+@import "normalize.scss";
 @import "mixins.scss";
 @import "variables.scss";
 @import "global.scss";
 @import "fonts.scss";
 @import "blocks/advantages.scss";
 @import "blocks/background.scss";
+@import "blocks/btn.scss";
 @import "blocks/contacts.scss";
 @import "blocks/content.scss";
 @import "blocks/download.scss";
@@ -12,7 +14,8 @@
 @import "blocks/form.scss";
 @import "blocks/header.scss";
 @import "blocks/html.scss";
-@import "blocks/logotype.scss";
+@import "blocks/logotype-header.scss";
+@import "blocks/logotype-footer.scss";
 @import "blocks/main.scss";
 @import "blocks/nav.scss";
 @import "blocks/page.scss";
