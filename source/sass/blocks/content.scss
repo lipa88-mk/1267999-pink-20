@@ -1,17 +1,17 @@
 .content {
   position: relative;
   z-index: 2;
-  margin-top: -290px;
+  margin-top: -220px;
   padding-top: 18px;
   background-color: $main-color;
 
   @media (min-width: $tablet-width) {
-    margin-top: -110px;
+    margin-top: -177px;
     padding-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -46px;
+    margin-top: -458px;
   }
 }
 

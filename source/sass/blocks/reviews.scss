@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     z-index: 1;
+    margin-top: -22px;
   }
 
   &--wrapper {
@@ -30,15 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 187px;
-
-    &::before {
-      content: " ";
-      position: absolute;
-      @include background-pseudo (url("../img/icon-quotes.svg"), cover, 79px, 64px);
-      top: -113px;
-      right: 46vw;
-    }
+    margin-top: 205px;
   }
 }
 

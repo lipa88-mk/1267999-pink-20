@@ -1,0 +1,101 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px 30px 16px;
+  border: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  @include font (700, 18px, 1);
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+
+  &--upload {
+    border: 3px solid $red-color;
+    border-radius: 30px;
+    color: $red-color;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+      background-color: $red-color;
+    }
+
+    &:active {
+      color: rgba($main-color, 0.3);
+    }
+  }
+
+  &--cancel {
+    border: 3px solid $header-color;
+    border-radius: 30px;
+    color: $header-color;
+    background-color: transparent;
+    opacity: 0.1;
+
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+    }
+
+    &:active {
+      background-color: $header-color;
+      color: $main-color;
+      opacity: 0.3;
+    }
+  }
+
+  &--download {
+    border: 3px solid $main-color;
+    border-radius: 30px;
+    color: $main-color;
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      padding: 16px 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 21px;
+      line-height: 21px;
+      padding: 14px 20px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $main-color;
+      color: $red-color;
+    }
+
+    &:active {
+      color: rgba($red-color, 0.3);
+    }
+  }
+
+  &--submit,
+  &--popup {
+    padding: 17px 30px 16px;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $main-color;
+    background-color: $buttom-color;
+
+    &:hover,
+    &:focus {
+      background-color: $buttom-darker;
+    }
+
+    &:active {
+      color: rgba($main-color, 0.3);
+    }
+
+    &:disabled {
+      background-color: $border-color;
+      cursor: default;
+    }
+  }
+}
