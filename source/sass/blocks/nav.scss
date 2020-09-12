@@ -1,5 +1,6 @@
 .nav__list {
   position: relative;
+
   @include flexible (flex, column, center);
 
   @media (min-width: $desktop-width) {
@@ -18,7 +19,7 @@
 .nav__toggle {
   position: absolute;
   top: 9px;
-  right: 0px;
+  right: 0;
   z-index: 2;
   display: block;
   width: 70px;
@@ -35,7 +36,12 @@
 
 .nav--closed .nav__toggle {
   background-color: transparent;
+  
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
+
 
 .nav--closed .nav__toggle::before {
   content: "";
@@ -56,12 +62,6 @@
 .nav--closed .nav__toggle:active::before {
   background-color: rgba($red-color, 0.3);
   box-shadow: 0 8px 0 0 rgba($red-color, 0.3), 0 16px 0 0 rgba($red-color, 0.3);
-}
-
-.nav--closed .nav__toggle {
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
 
 .nav--closed .nav__list {
@@ -92,6 +92,7 @@
   &::after {
     content: "";
     position: absolute;
+    
     @include icon-size (32px, 2px, 23px, 24px);
     background-color: $main-color;
   }
@@ -123,6 +124,7 @@
   box-shadow: 0 1px 0 $black-color, inset 0 1px 0 rgba($red-color, 0.15);
   color: $main-color;
   text-transform: uppercase;
+
   @include font (bold, 18px, 1.78);
 
   &:hover {

@@ -37,6 +37,7 @@
 
 .reviews__author {
   display: block;
+  
   @include font (bold, 18px, 1.67);
   font-style: normal;
   color: $black-color;
@@ -48,6 +49,7 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 35px;
+
       @include font-no-weight (20px, 1.5);
     }
 

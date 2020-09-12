@@ -8,15 +8,14 @@
   }
 
   @media (min-width: $tablet-width) and (min-resolution: 144dpi), (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
-  background-image: url("../img/bg-back-tablet@2x.jpg");
+    background-image: url("../img/bg-back-tablet@2x.jpg");
   }
 
   @media (min-width: $desktop-width) {
     @include background (url("../img/bg-back-desktop@1x.jpg"), cover, 100%, 853px);
   }
 
-  @media (min-width: $desktop-width) and (min-resolution: 144dpi),
-  (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
+  @media (min-width: $desktop-width) and (min-resolution: 144dpi), (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-back-desktop@2x.jpg");
     background-size: 2560px auto;
   }
@@ -77,22 +76,24 @@
       top: 177px;
       right: 19%;
       content: " ";
+
       @include background-pseudo (url("../img/iphone-hand-mobile@1x.png"), cover, 258px, 286px);
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/iphone-hand-mobile@2x.png");
-      background-size: 258px auto;
+        background-image: url("../img/iphone-hand-mobile@2x.png");
+        background-size: 258px auto;
       }
     }
   }
 
   @media (min-width: $tablet-width) {
     &::after {
-    position: absolute;
-    content: " ";
-    @include background-pseudo (url("../img/iphone-hand-tablet@1x.png"), cover, 660px, 545px);
-    top: 71px;
-    right: 0;
+      position: absolute;
+      content: " ";
+
+      @include background-pseudo (url("../img/iphone-hand-tablet@1x.png"), cover, 660px, 545px);
+      top: 71px;
+      right: 0;
 
       @media (min-width: $tablet-width) and (min-resolution: 144dpi), (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
         background-image: url("../img/iphone-hand-tablet@2x.png");
@@ -103,11 +104,12 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-    position: absolute;
-    content: " ";
-    @include background-pseudo (url("../img/iphone-hand-desktop@1x.png"), cover, 1050px, 645px);
-    top: 208px;
-    left: 2%;
+      position: absolute;
+      content: " ";
+
+      @include background-pseudo (url("../img/iphone-hand-desktop@1x.png"), cover, 1050px, 645px);
+      top: 208px;
+      left: 2%;
 
       @media (min-width: $desktop-width) and (min-resolution: 144dpi), (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
         background-image: url("../img/iphone-hand-desktop@2x.png");
@@ -122,12 +124,14 @@
   margin: 0 auto;
   padding-top: 92px;
   text-align: center;
+
   @include font (300, 24px, 1.2);
   color: $additional-color;
 
   @media (min-width: $tablet-width) {
     padding-top: 92px;
     margin-left: 35px;
+
     @include font-no-weight (40px, 1.2);
   }
 
@@ -178,6 +182,7 @@
 
 .background__download {
   position: relative;
+
   @include flexible (flex, column, center);
   align-items: center;
   background-color: $download-color;
@@ -245,6 +250,7 @@
   }
 
   &--instagram {
+    
     @include icon-size (44px, 41px, 44px, 57px);
     background-size: 44px 41px;
     content: " ";
