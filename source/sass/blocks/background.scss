@@ -1,5 +1,6 @@
 .background--wrapper {
   @media (min-width: $tablet-width) {
+    background-color: $header-color;
     background-repeat: no-repeat;
     background-position: center top;
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -60,6 +61,7 @@
   position: relative;
 
   @media (max-width: $mobile-width) {
+    background-color: $header-color;
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-size: cover;
     width: auto;
@@ -122,7 +124,7 @@
 .background__title {
   width: 230px;
   margin: 0 auto;
-  padding-top: 92px;
+  padding-top: 95px;
   text-align: center;
 
   @include font (300, 24px, 1.2);
@@ -198,7 +200,7 @@
 
 .background__download-btn {
   width: 280px;
-  margin-top: 30px;
+  margin-top: 33px;
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
@@ -233,25 +235,24 @@
   }
 
   &--app-store {
-    top: 32px;
-    left: -102px;
+    @include icon-size (47px, 56px, 32px, -102px);
     content: " ";
-    background: url("../img/logo-apple.svg") 47px 56px no-repeat center;
+    background-image: url("../img/logo-apple.svg");
+    background-repeat: no-repeat;
   }
 
   &--google-play {
-    top: 38px;
-    left: -20px;
+    @include icon-size (43px, 47px, 38px, -20px);
     content: " ";
-    background: url("../img/logo-android.svg") 43px 47px no-repeat center;
+    background-image: url("../img/logo-android.svg");
+    background-repeat: no-repeat;
   }
 
   &--instagram {
-
-    top: 44px;
-    left: 57px;
+    @include icon-size (44px, 41px, 44px, 57px);
     content: " ";
-    background: url("../img/logo-microsoft.svg") 44px 41px no-repeat center;
+    background-image: url("../img/logo-microsoft.svg");
+    background-repeat: no-repeat;
   }
 }
 
