@@ -52,28 +52,12 @@
 
 .nav--closed .nav__toggle {
   top: -57px;
-  right: 0px;
+  right: 0;
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
     top: -79px;
     right: -3px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.nav--opened .nav__toggle {
-  margin: 0 auto;
-  top: -57px;
-  right: 3px;
-
-
-  @media (min-width: $tablet-width) {
-    top: -80px;
-    right: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,10 +105,19 @@
 }
 
 .nav--opened .nav__toggle {
+  margin: 0 auto;
+  top: -57px;
+  right: 3px;
+
+  @media (min-width: $tablet-width) {
+    top: -80px;
+    right: 3px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
-
+  
   &::before,
   &::after {
     content: "";
