@@ -100,7 +100,7 @@
 .footer__copyright-text {
   @media (min-width: $desktop-width) {
     margin-top: 12px;
-    
+
     @include font-no-weight (18px, 18px);
   }
 }

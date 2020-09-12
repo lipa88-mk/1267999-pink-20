@@ -36,7 +36,7 @@
 
 .nav--closed .nav__toggle {
   background-color: transparent;
-  
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -92,7 +92,7 @@
   &::after {
     content: "";
     position: absolute;
-    
+
     @include icon-size (32px, 2px, 23px, 24px);
     background-color: $main-color;
   }

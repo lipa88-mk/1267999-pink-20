@@ -5,7 +5,7 @@
 .contacts__title {
   width: 225px;
   margin: 41px auto 36px auto;
-  
+
   @include font (300, 24px, 1.2);
 
   @media (min-width: $tablet-width) {
