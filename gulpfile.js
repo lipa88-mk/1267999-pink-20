@@ -8,7 +8,7 @@ const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
-const del = require('del');
+const del = require("del");
 const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
 const htmlmin = require("gulp-htmlmin")
@@ -60,7 +60,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -92,7 +92,7 @@ const images = () => {
 //Webp
   
 const imageswebp = () => {
-  return gulp.src("source/img/*.jpg")
+  return gulp.src("source/img/*.{jpg,png}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"))
   }
