@@ -438,6 +438,11 @@
   opacity: 0;
 }
 
+.form__checkbox-input:focus + .form__checkbox-label::before {
+  opacity: 1;
+  outline: 1px solid $red-color;
+}
+
 .form__checkbox-input:checked ~ .form__checkbox-label::after {
   content: "";
   position: absolute;
@@ -522,6 +527,11 @@
   z-index: 0;
   outline: none;
   opacity: 0;
+}
+
+.form__radio-input:focus + .form__radio-label::before {
+  opacity: 1;
+  outline: 1px solid $red-color;
 }
 
 .form__radio-input:checked ~ .form__radio-label::after {

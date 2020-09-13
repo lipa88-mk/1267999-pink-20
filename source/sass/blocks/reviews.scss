@@ -7,19 +7,19 @@
     z-index: 1;
     margin-top: -22px;
   }
+}
 
-  &--wrapper {
-    text-align: center;
-    margin: 0 auto;
-    width: $mobile-wrapper;
+.reviews__wrapper {
+  text-align: center;
+  margin: 0 auto;
+  width: $mobile-wrapper;
 
-    @media (min-width: $tablet-width) {
-      width: $tablet-wrapper;
-    }
+  @media (min-width: $tablet-width) {
+    width: $tablet-wrapper;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 690px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 690px;
   }
 }
 
