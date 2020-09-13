@@ -103,10 +103,8 @@ exports.imageswebp = imageswebp;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html", 
-  gulp.series("html"));
-  gulp.watch("source/js/*.js", 
-  gulp.series("js"));
+  gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
+  gulp.watch("source/js/*.js", gulp.series("js"));
 }
 
 exports.default = gulp.series(
@@ -128,10 +126,12 @@ const copy = () => {
 exports.copy = copy;
   
 //Del
-  
+
 const clean = () => {
   return del("build");
   };
+
+exports.clean = clean;
   
 // Build
   
