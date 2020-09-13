@@ -90,13 +90,13 @@ const images = () => {
 }
   
 //Webp
-  
+
 const imageswebp = () => {
   return gulp.src("source/img/*.{jpg,png}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"))
   }
-  
+
 exports.imageswebp = imageswebp;
 
 // Watcher
@@ -122,9 +122,9 @@ const copy = () => {
   })
   .pipe(gulp.dest("build"));
   };
-  
+
 exports.copy = copy;
-  
+
 //Del
 
 const clean = () => {
@@ -132,9 +132,9 @@ const clean = () => {
   };
 
 exports.clean = clean;
-  
+
 // Build
-  
+
 const build = gulp.series(
   clean,
   copy,
@@ -144,9 +144,9 @@ const build = gulp.series(
   html,
   js
 );
-  
+
 exports.build = build;
-  
+
 exports.default = gulp.series(
   build, server, watcher
 );
