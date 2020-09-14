@@ -15,10 +15,20 @@
   }
 }
 
-.photo__wrapper {
+.photo__inner {
   @include flexible (flex, column, center);
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0 auto;
+  }
+}
+
+.photo__wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
