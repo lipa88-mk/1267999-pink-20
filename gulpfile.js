@@ -88,7 +88,7 @@ const images = () => {
     ]))
     .pipe(gulp.dest("build/img"))
 }
-  
+
 //Webp
 
 const imageswebp = () => {
