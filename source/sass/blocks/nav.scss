@@ -1,15 +1,39 @@
 .nav__list {
   position: relative;
+
   @include flexible (flex, column, center);
 
   @media (min-width: $desktop-width) {
     width: 620px;
+    margin-left: auto;
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
 .nav--closed {
+  position: relative;
+  width: $mobile-width-only;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.nav__wrapper {
+  position: relative;
+  width: $mobile-width-only;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: 28px;
   }
@@ -17,8 +41,6 @@
 
 .nav__toggle {
   position: absolute;
-  top: 9px;
-  right: 0px;
   z-index: 2;
   display: block;
   width: 70px;
@@ -26,15 +48,21 @@
   background-color: $header-color;
   cursor: pointer;
   border: none;
-
-  @media (min-width: $tablet-width) {
-    top: 30px;
-    right: 2px;
-  }
 }
 
 .nav--closed .nav__toggle {
+  top: -57px;
+  right: 0;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    top: -79px;
+    right: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .nav--closed .nav__toggle::before {
@@ -58,12 +86,6 @@
   box-shadow: 0 8px 0 0 rgba($red-color, 0.3), 0 16px 0 0 rgba($red-color, 0.3);
 }
 
-.nav--closed .nav__toggle {
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
 .nav--closed .nav__list {
   @media (max-width: $tablet-width-only) {
     display: none;
@@ -79,11 +101,19 @@
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
-    margin-top: 28px;
   }
 }
 
 .nav--opened .nav__toggle {
+  margin: 0 auto;
+  top: -57px;
+  right: 3px;
+
+  @media (min-width: $tablet-width) {
+    top: -80px;
+    right: 3px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -92,6 +122,7 @@
   &::after {
     content: "";
     position: absolute;
+
     @include icon-size (32px, 2px, 23px, 24px);
     background-color: $main-color;
   }
@@ -123,6 +154,7 @@
   box-shadow: 0 1px 0 $black-color, inset 0 1px 0 rgba($red-color, 0.15);
   color: $main-color;
   text-transform: uppercase;
+
   @include font (bold, 18px, 1.78);
 
   &:hover {

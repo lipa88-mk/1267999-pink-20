@@ -1,5 +1,6 @@
 .background--wrapper {
   @media (min-width: $tablet-width) {
+    background-color: $header-color;
     background-repeat: no-repeat;
     background-position: center top;
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -8,15 +9,14 @@
   }
 
   @media (min-width: $tablet-width) and (min-resolution: 144dpi), (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
-  background-image: url("../img/bg-back-tablet@2x.jpg");
+    background-image: url("../img/bg-back-tablet@2x.jpg");
   }
 
   @media (min-width: $desktop-width) {
     @include background (url("../img/bg-back-desktop@1x.jpg"), cover, 100%, 853px);
   }
 
-  @media (min-width: $desktop-width) and (min-resolution: 144dpi),
-  (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
+  @media (min-width: $desktop-width) and (min-resolution: 144dpi), (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-back-desktop@2x.jpg");
     background-size: 2560px auto;
   }
@@ -61,38 +61,40 @@
   position: relative;
 
   @media (max-width: $mobile-width) {
+    background-color: $header-color;
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-size: cover;
     width: auto;
     height: 462px;
-    background-color: $header-color;
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 700px auto;
-  }
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 700px auto;
+    }
 
     &::after {
       position: absolute;
       top: 177px;
       right: 19%;
       content: " ";
+
       @include background-pseudo (url("../img/iphone-hand-mobile@1x.png"), cover, 258px, 286px);
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/iphone-hand-mobile@2x.png");
-      background-size: 258px auto;
+        background-image: url("../img/iphone-hand-mobile@2x.png");
+        background-size: 258px auto;
       }
     }
   }
 
   @media (min-width: $tablet-width) {
     &::after {
-    position: absolute;
-    content: " ";
-    @include background-pseudo (url("../img/iphone-hand-tablet@1x.png"), cover, 660px, 545px);
-    top: 71px;
-    right: 0;
+      position: absolute;
+      content: " ";
+
+      @include background-pseudo (url("../img/iphone-hand-tablet@1x.png"), cover, 660px, 545px);
+      top: 71px;
+      right: 0;
 
       @media (min-width: $tablet-width) and (min-resolution: 144dpi), (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
         background-image: url("../img/iphone-hand-tablet@2x.png");
@@ -103,11 +105,12 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-    position: absolute;
-    content: " ";
-    @include background-pseudo (url("../img/iphone-hand-desktop@1x.png"), cover, 1050px, 645px);
-    top: 208px;
-    left: 2%;
+      position: absolute;
+      content: " ";
+
+      @include background-pseudo (url("../img/iphone-hand-desktop@1x.png"), cover, 1050px, 645px);
+      top: 208px;
+      left: 2%;
 
       @media (min-width: $desktop-width) and (min-resolution: 144dpi), (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
         background-image: url("../img/iphone-hand-desktop@2x.png");
@@ -120,14 +123,16 @@
 .background__title {
   width: 230px;
   margin: 0 auto;
-  padding-top: 92px;
+  padding-top: 95px;
   text-align: center;
+
   @include font (300, 24px, 1.2);
   color: $additional-color;
 
   @media (min-width: $tablet-width) {
     padding-top: 92px;
     margin-left: 35px;
+
     @include font-no-weight (40px, 1.2);
   }
 
@@ -145,15 +150,13 @@
     @media (min-width: $tablet-width) {
       margin-left: auto;
       padding-top: 174px;
+
       @include font-no-weight (50px, 1.36);
       width: 360px;
+    }
 
     @media (min-width: $desktop-width) {
       padding-top: 169px;
-    }
-  }
-
-    @media (min-width: $desktop-width) {
       width: 350px;
     }
   }
@@ -166,6 +169,7 @@
       margin: 0 auto;
       padding-top: 175px;
       width: $tablet-wrapper;
+
       @include font-no-weight (50px, 1.36);
     }
 
@@ -178,6 +182,7 @@
 
 .background__download {
   position: relative;
+
   @include flexible (flex, column, center);
   align-items: center;
   background-color: $download-color;
@@ -194,11 +199,11 @@
 
 .background__download-btn {
   width: 280px;
-  margin-top: 30px;
-  margin-bottom: 0px;
+  margin-top: 33px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -212,15 +217,12 @@
 }
 
 .background__link {
-  color: $main-color;
-}
-
-.background__link {
   max-width: $mobile-wrapper;
   position: absolute;
   display: block;
   text-indent: -1000px;
   overflow: hidden;
+  color: $main-color;
 
   @media (min-width: $tablet-width) {
     margin-top: 15px;
@@ -230,27 +232,27 @@
   @media (min-width: $desktop-width) {
     margin-top: 33px;
   }
+
   &--app-store {
     @include icon-size (47px, 56px, 32px, -102px);
-    background-size: 47px 56px;
     content: " ";
-    background: url("../img/logo-apple.svg") no-repeat center;
+    background-image: url("../img/logo-apple.svg");
+    background-repeat: no-repeat;
   }
 
   &--google-play {
     @include icon-size (43px, 47px, 38px, -20px);
-    background-size: 43px 47px;
     content: " ";
-    background: url("../img/logo-android.svg") no-repeat center;
+    background-image: url("../img/logo-android.svg");
+    background-repeat: no-repeat;
   }
 
   &--instagram {
     @include icon-size (44px, 41px, 44px, 57px);
-    background-size: 44px 41px;
     content: " ";
-    background: url("../img/logo-microsoft.svg") no-repeat center;
+    background-image: url("../img/logo-microsoft.svg");
+    background-repeat: no-repeat;
   }
-
 }
 
 .background__decsription {
@@ -262,8 +264,9 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 135px;
-    margin-bottom: 0px;
-    @include font-no-weight (18px, 1.33)
+    margin-bottom: 0;
+
+    @include font-no-weight (18px, 1.33);
     width: 300px;
   }
 

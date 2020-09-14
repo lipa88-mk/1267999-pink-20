@@ -49,7 +49,6 @@
   }
 
   &--full {
-
     @media (max-width: $mobile-width) {
       padding-top: 24px;
     }
@@ -261,7 +260,7 @@
   &--email {
     @media (min-width: $tablet-width) {
       &::before {
-        background: $border-color url(../img/icon-mail.svg) no-repeat center;
+        background: $border-color url("../img/icon-mail.svg") no-repeat center;
         background-size: 18px 13px;
       }
     }
@@ -270,7 +269,7 @@
   &--phone {
     @media (min-width: $tablet-width) {
       &::before {
-        background: $border-color url(../img/icon-phone.svg) no-repeat center;
+        background: $border-color url("../img/icon-phone.svg") no-repeat center;
         background-size: 20px 19px;
       }
     }
@@ -310,7 +309,7 @@
 .form__text-input {
   display: block;
   box-sizing: border-box;
-  padding:  14px 20px 15px;
+  padding: 14px 20px 15px;
   width: 100%;
   border: 2px solid $border-color;
   border-radius: 2px;
@@ -439,6 +438,11 @@
   opacity: 0;
 }
 
+.form__checkbox-input:focus + .form__checkbox-label::before {
+  opacity: 1;
+  outline: 1px solid $red-color;
+}
+
 .form__checkbox-input:checked ~ .form__checkbox-label::after {
   content: "";
   position: absolute;
@@ -446,7 +450,7 @@
   left: 9px;
   width: 22px;
   height: 16px;
-  background: url(../img/icon-yes-red.svg) no-repeat top left;
+  background: url("../img/icon-yes-red.svg") no-repeat top left;
   background-size: 22px 16px;
   z-index: 1;
 }
@@ -525,6 +529,11 @@
   opacity: 0;
 }
 
+.form__radio-input:focus + .form__radio-label::before {
+  opacity: 1;
+  outline: 1px solid $red-color;
+}
+
 .form__radio-input:checked ~ .form__radio-label::after {
   content: "";
   display: block;
@@ -549,7 +558,7 @@
 }
 
 .form__textarea {
-  padding:  14px 20px 14px;
+  padding: 14px 20px 14px;
   margin: 0;
   display: block;
   border: 2px solid $border-color;
@@ -608,7 +617,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 17px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 

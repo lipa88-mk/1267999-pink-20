@@ -19,7 +19,6 @@
   @media (max-width: $mobile-width) {
     width: $mobile-wrapper;
     margin: -13px auto 0 auto;
-    width: 100%;
     padding: 0;
   }
 
@@ -35,7 +34,7 @@
 
 .content__title {
   width: $mobile-wrapper;
-  margin: 25px auto 0px auto;
+  margin: 25px auto 0 auto;
   line-height: 30px;
   text-align: center;
 

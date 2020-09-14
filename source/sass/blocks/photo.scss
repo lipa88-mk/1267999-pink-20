@@ -13,19 +13,23 @@
   @media (min-width: $desktop-width) {
     margin-top: -458px;
   }
+}
 
+.photo__wrapper {
+  @include flexible (flex, column, center);
+  align-items: center;
 
-  &--wrapper {
-    @include flexible (flex, column, center);
-    align-items: center;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 
-    @media (min-width: $tablet-width) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: baseline;
-      margin: 0 auto;
-    }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 55px;
   }
 }
 
@@ -46,26 +50,9 @@
   }
 }
 
-.photo__wrapper {
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 55px;
-  }
-}
-
 .photo__panorama {
   position: relative;
 }
-
 
 .photo__image {
   display: block;
@@ -111,7 +98,7 @@
   line-height: 2.18;
 
   @media (min-width: $tablet-width) {
-    @include font-no-weight (18px, 1.67);
+    @include font-no-weight(18px, 1.67);
     width: 450px;
   }
 
@@ -130,7 +117,6 @@
   }
 
   &--panorama {
-
     @media (min-width: $tablet-width) {
       width: $tablet-wrapper;
     }
@@ -142,7 +128,7 @@
 }
 
 .photo__author-wrapper {
-  @include flexible (flex, column, left);
+  @include flexible(flex, column, left);
   margin-left: 17px;
 
   @media (min-width: $tablet-width) {
@@ -181,7 +167,6 @@
     font-weight: bold;
     margin-bottom: -15px;
 
-
     @media (min-width: $tablet-width) {
       margin-top: 26px;
     }
@@ -194,12 +179,11 @@
     }
   }
 
-
   &--time {
-    @include font (300, 12px, 2);
+    @include font(300, 12px, 2);
     text-transform: uppercase;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       margin-left: 0;
     }
   }
@@ -211,8 +195,8 @@
 
   &--comment-inner {
     @media (min-width: $tablet-width) {
-      margin-top: 0px;
-      margin-bottom: 0px;
+      margin-top: 0;
+      margin-bottom: 0;
       min-height: 65px;
     }
   }
@@ -241,8 +225,8 @@
   &--inner {
     @media (min-width: $tablet-width) {
       width: 240px;
-      margin-bottom: 0px;
-      padding-bottom: 0px;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
   }
 }
@@ -275,12 +259,11 @@
 .photo__like-btn {
   width: 13px;
   height: 12px;
-  background-color: transparent;
   border: none;
   padding: 0;
   text-indent: -1000px;
   overflow: hidden;
-  background: url("../img/icon-heart.svg") no-repeat center;
+  background: transparent url("../img/icon-heart.svg") no-repeat center;
   background-size: 13px 12px;
   outline: none;
   cursor: pointer;
