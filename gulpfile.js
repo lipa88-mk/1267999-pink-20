@@ -16,9 +16,9 @@ const htmlmin = require("gulp-htmlmin")
 //Html
 
 const html = () => {
-return gulp.src("source/*.html")
-.pipe(htmlmin({collapseWhitespace:true}))
-.pipe(gulp.dest("build"));
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace:true}))
+    .pipe(gulp.dest("build"));
 }
 
 exports.html = html;
