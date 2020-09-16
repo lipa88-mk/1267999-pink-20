@@ -65,7 +65,11 @@
   }
 
   &--apps {
-    background-color: $additional-color;
+    @media (max-width: $mobile-width) {
+      background-color: $additional-color;
+      margin-left: calc((100vw - 280px) / -2);
+      margin-right: calc((100vw - 280px) / -2);
+    }
 
     @media (min-width: $tablet-width) {
       background-color: transparent;
@@ -93,8 +97,8 @@
   &--achievements {
     @media (max-width: $mobile-width) {
       background-color: $additional-color;
-      margin-left: calc(((100vw - (100vw - 100%)) - 280px) / -2);
-      margin-right: calc(((100vw - (100vw - 100%)) - 280px) / -2);
+      margin-left: calc((100vw - 280px) / -2);
+      margin-right: calc((100vw - 280px) / -2);
     }
 
     @media (min-width: $tablet-width) {
