@@ -27,23 +27,6 @@
   }
 }
 
-.nav--closed + .logotype-header {
-  background-color: rgba($black-color, 0.3);
-  box-shadow: none;
-
-  @media (min-width: $desktop-width) {
-    background-color: transparent;
-  }
-}
-
-.nav--opened + .logotype-header {
-  background-color: $header-color;
-
-  @media (min-width: $desktop-width) {
-    background-color: transparent;
-  }
-}
-
 .logotype-header__svg {
   margin: 6px 0 0 -52px;
   fill: $main-color;

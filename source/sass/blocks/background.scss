@@ -14,6 +14,7 @@
 
   @media (min-width: $desktop-width) {
     @include background (url("../img/bg-back-desktop@1x.jpg"), cover, 100%, 853px);
+    overflow: hidden;
   }
 
   @media (min-width: $desktop-width) and (min-resolution: 144dpi), (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
@@ -29,11 +30,11 @@
     width: auto;
     height: 462px;
     background-color: $header-color;
-  }
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 700px auto;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 700px auto;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -123,7 +124,7 @@
 .background__title {
   width: 230px;
   margin: 0 auto;
-  padding-top: 95px;
+  padding-top: 93px;
   text-align: center;
 
   @include font (300, 24px, 1.2);
@@ -144,7 +145,7 @@
   }
 
   &--additional {
-    padding-top: 100px;
+    padding-top: 98px;
     line-height: 1.4;
 
     @media (min-width: $tablet-width) {
@@ -162,7 +163,7 @@
   }
 
   &--form {
-    padding-top: 100px;
+    padding-top: 97px;
     line-height: 1.4;
 
     @media (min-width: $tablet-width) {
@@ -186,11 +187,9 @@
   @include flexible (flex, column, center);
   align-items: center;
   background-color: $download-color;
-  margin-top: -1px;
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
-    margin-top: 0;
     position: relative;
     background-color: transparent;
     z-index: 2;
@@ -199,7 +198,7 @@
 
 .background__download-btn {
   width: 280px;
-  margin-top: 33px;
+  margin-top: 30px;
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
@@ -225,7 +224,7 @@
   color: $main-color;
 
   @media (min-width: $tablet-width) {
-    margin-top: 15px;
+    margin-top: 11px;
     margin-left: 148px;
   }
 
@@ -234,7 +233,7 @@
   }
 
   &--app-store {
-    @include icon-size (47px, 56px, 32px, -102px);
+    @include icon-size (48px, 56px, 32px, -102px);
     content: " ";
     background-image: url("../img/logo-apple.svg");
     background-repeat: no-repeat;
@@ -256,7 +255,7 @@
 }
 
 .background__decsription {
-  margin-top: 111px;
+  margin-top: 109px;
   margin-bottom: 32px;
   font-weight: 300;
   color: $additional-color;

@@ -2,7 +2,6 @@
   margin: 0;
   padding-top: 10px;
   padding-bottom: 15px;
-  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 50px;
@@ -31,13 +30,13 @@
   left: 0;
   padding: 34px 0 42px;
   border: none;
-  max-width: 100%;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     margin-bottom: 65px;
     border: 2px solid $border-color;
     border-radius: 2px;
+    max-width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,7 +65,11 @@
   }
 
   &--apps {
-    background-color: $additional-color;
+    @media (max-width: $mobile-width) {
+      background-color: $additional-color;
+      margin-left: calc((100vw - 280px) / -2);
+      margin-right: calc((100vw - 280px) / -2);
+    }
 
     @media (min-width: $tablet-width) {
       background-color: transparent;
@@ -92,7 +95,11 @@
   }
 
   &--achievements {
-    background-color: $additional-color;
+    @media (max-width: $mobile-width) {
+      background-color: $additional-color;
+      margin-left: calc((100vw - 280px) / -2);
+      margin-right: calc((100vw - 280px) / -2);
+    }
 
     @media (min-width: $tablet-width) {
       background-color: transparent;

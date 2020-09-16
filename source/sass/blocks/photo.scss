@@ -2,7 +2,7 @@
   position: relative;
   z-index: 2;
   margin-top: -220px;
-  padding-top: 18px;
+  padding-top: 30px;
   background-color: $main-color;
 
   @media (min-width: $tablet-width) {
@@ -54,6 +54,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      width: 100%;
       margin-top: 70px;
       margin-bottom: 48px;
     }
