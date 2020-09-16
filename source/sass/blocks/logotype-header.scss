@@ -36,11 +36,18 @@
   }
 }
 
-.nav--opened + .logotype-header {
+.nav--opened + .logotype-header,
+.nav--nojs + .logotype-header {
   background-color: $header-color;
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
+  }
+}
+
+.nav--nojs + .logotype-header {
+  @media (max-width: $tablet-width-only) {
+  box-shadow: 0 1px 0 $black-color;
   }
 }
 
