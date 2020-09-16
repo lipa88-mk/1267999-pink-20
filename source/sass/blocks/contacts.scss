@@ -105,24 +105,24 @@
 .contacts__map {
   position: relative;
   width: 100%;
-  
+
   @media (max-width: $mobile-width) {
     height: 202px;
     background: $additional-color url("../img/bg-map-mobile@1x.png") no-repeat center/cover;
   }
-  
+
   @media (min-width: $tablet-width) {
     height: 364px;
     margin-top: 31px;
     background: $additional-color url("../img/bg-map-tablet@1x.jpg") no-repeat center/cover;
   }
-  
+
   @media (min-width: $desktop-width) {
     height: 518px;
     margin-top: 15px;
     background: $additional-color url("../img/bg-map-desktop@1x.jpg") no-repeat center/cover;
   }
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -148,20 +148,20 @@
     background-position: center bottom;
   }
 }
-  
+
 .contacts__map--item {
   vertical-align: bottom;
   height: 100%;
-  
+
   @media (max-width: $mobile-width) {
     height: 202px;
   }
-  
+
   @media (min-width: $tablet-width) {
     min-height: 369px;
   }
-  
+
   @media (min-width: $desktop-width) {
-    height: 505px;
+    height: 518px;
   }
 }
