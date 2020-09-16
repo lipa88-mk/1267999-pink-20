@@ -90,8 +90,11 @@
             <article class="photo__item photo__item--card">
               <a href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp, photo-car-desktop@2x.webp">
                   <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp, photo-car-tablet@2x.webp">
                   <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+                  <source type="image/webp" media="(max-width: 659px)" srcset="photo-car-mobile@1x.webp, photo-car-mobile@2x.webp">
                   <img class="photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="фотография пользователя Левон">
                 </picture>
               </a>

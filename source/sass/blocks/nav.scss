@@ -69,7 +69,7 @@
   content: "";
   position: absolute;
   top: 10px;
-  left: 0px;
+  left: 0;
   width: 50px;
   height: 4px;
   background-color: $main-color;
@@ -285,6 +285,6 @@
 
 .nav--nojs + .nav__header {
   @media (max-width: $tablet-width-only) {
-  box-shadow: 0 1px 0 $black-color;
+    box-shadow: 0 1px 0 $black-color;
   }
 }
